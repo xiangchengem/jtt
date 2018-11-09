@@ -10,6 +10,8 @@
     <meta name="description" content="欢迎使用京推推CMS导购系统!" />
     <link rel="shortcut icon" href="http://capi.jingtuitui.com/cms.ico" />
     <script src="http://capi.jingtuitui.com/static/cms/js/jquery-1.9.1.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/core.js"></script> -->
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/namalize.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -27,7 +29,6 @@
     </div>
     <!-- 版心 -->
     <div class="Layout">
-
         <header>
             <div class="leftLogo">
                 <img src="public/images/jttlogo.png" alt="京推推">
@@ -48,24 +49,86 @@
                 <li><a href="javascrpit:;">全部优惠卷</a></li>
             </ul>
         </nav>
-        <!-- 侧边导航 -->
-        <aside>
-            <ul class="asideNavBar">
-                <li><a href="javascript:;">女装<img src="public/images/gt.png" alt=""></a></li>
-                <li><a href="javascript:;">男装<img src="public/images/gt.png" alt=""></a></li>
-                <li><a href="javascript:;">内衣<img src="public/images/gt.png" alt=""></a></li>
-                <li><a href="javascript:;">母婴<img src="public/images/gt.png" alt=""></a></li>
-                <li><a href="javascript:;">美妆<img src="public/images/gt.png" alt=""></a></li>
-                <li><a href="javascript:;">居家<img src="public/images/gt.png" alt=""></a></li>
-                <li><a href="javascript:;">鞋包<img src="public/images/gt.png" alt=""></a></li>
-                <li><a href="javascript:;">美食<img src="public/images/gt.png" alt=""></a></li>
-                <li><a href="javascript:;">文体<img src="public/images/gt.png" alt=""></a></li>
-                <li><a href="javascript:;">数码<img src="public/images/gt.png" alt=""></a></li>
-                <li><a href="javascript:;">运动<img src="public/images/gt.png" alt=""></a></li>
-                <li><a href="javascript:;">其他<img src="public/images/gt.png" alt=""></a></li>
-            </ul>
-        </aside>
-
+        <!-- 侧边导航+swiper -->
+        <div class="container">
+            <aside>
+                <ul class="asideNavBar">
+                    <li><a href="javascript:;">女装<img src="public/images/right-gt.png" alt=""></a></li>
+                    <li><a href="javascript:;">男装<img src="public/images/right-gt.png" alt=""></a></li>
+                    <li><a href="javascript:;">内衣<img src="public/images/right-gt.png" alt=""></a></li>
+                    <li><a href="javascript:;">母婴<img src="public/images/right-gt.png" alt=""></a></li>
+                    <li><a href="javascript:;">美妆<img src="public/images/right-gt.png" alt=""></a></li>
+                    <li><a href="javascript:;">居家<img src="public/images/right-gt.png" alt=""></a></li>
+                    <li><a href="javascript:;">鞋包<img src="public/images/right-gt.png" alt=""></a></li>
+                    <li><a href="javascript:;">美食<img src="public/images/right-gt.png" alt=""></a></li>
+                    <li><a href="javascript:;">文体<img src="public/images/right-gt.png" alt=""></a></li>
+                    <li><a href="javascript:;">数码<img src="public/images/right-gt.png" alt=""></a></li>
+                    <li><a href="javascript:;">运动<img src="public/images/right-gt.png" alt=""></a></li>
+                    <li><a href="javascript:;">其他<img src="public/images/right-gt.png" alt=""></a></li>
+                </ul>
+            </aside>
+            <div class="swiper">
+                <ul class="inner">
+                    <li>
+                        <a href="../?r=item/296264">
+                            <img src="http://img.jingtuitui.com/6db022018103111330647.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../?r=item/296264">
+                            <img src="http://img.jingtuitui.com/1ed4b201810291021404814.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../?r=item/296264">
+                            <img src="http://img.jingtuitui.com/5725b201810240900542352.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../?r=item/296264">
+                            <img src="http://img.jingtuitui.com/19c5d201811011415206455.jpg">
+                        </a>
+                    </li>
+                </ul>
+                <div class="arrow">
+                    <a href="javascript:;" class="arrowLeft">&lt</a>
+                    <a href="javascript:;" class="arrowRight">&gt</a>
+                </div>
+                <div class="indecator"></div>
+            </div>
+            <div class="special">
+                <div class="fall">
+                    <a href="javascript:;">
+                        <div></div>
+                        <p>秋装专场</p>
+                    </a>
+                </div>
+                <div class="beauty">
+                    <a href="javascript:;">
+                        <div></div>
+                        <p>美妆专场</p>
+                    </a>
+                </div>
+                <div class="outdoor">
+                    <a href="javascript:;">
+                        <div></div>
+                        <p>户外旅行</p>
+                    </a>
+                </div>
+                <div class="furniture">
+                    <a href="javascript:;">
+                        <div></div>
+                        <p>家具专场</p>
+                    </a>
+                </div>
+                <div class="dis">
+                    <a href="javascript:;">
+                        <div></div>
+                        <p>9.9专场</p>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

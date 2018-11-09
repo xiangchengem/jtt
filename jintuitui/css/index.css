@@ -123,11 +123,21 @@ header .search .searchBtn span {
     color: #000000;
 }
 
+/* ---------------------------------------------头部导航动态添加class-------------- */
 .navigationBar-active {
     border-bottom: 4px solid #FFC36E
 }
-aside .asideNavBar li{
+
+.container {
+    width: 100%;
+    overflow: hidden;
 }
+
+/* 左侧导航 */
+aside {
+    float: left;
+}
+
 aside .asideNavBar {
     box-sizing: border-box;
     width: 230px;
@@ -135,6 +145,7 @@ aside .asideNavBar {
     padding: 7px 0;
     background: #FFF5E7;
 }
+
 aside .asideNavBar a {
     box-sizing: border-box;
     position: relative;
@@ -147,18 +158,143 @@ aside .asideNavBar a {
     letter-spacing: 0.08px;
     padding: 7px 15px;
 }
-aside .asideNavBar a img{
-    vertical-align: middle;    
+
+aside .asideNavBar a img {
+    vertical-align: middle;
     position: absolute;
     top: 10px;
-    right:15px;
+    right: 15px;
     height: 10px;
     width: 6px;
     background: url(/public/image/gt.png) no-repeat center center;
 }
 
+/* 轮播 */
+/* .container {
+    position: relative;
+} */
+.container .swiper {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    height: 374px;
+    width: 730px;
+    margin: 0 27px 0 27px;
+}
 
+.swiper .inner {
+    position: relative;
+    width: 50000px;
+    height: 100%;
+    font-size: 0;
+}
 
-/* header .search input::before{
-    content: '';
-} 获取双伪类元素不能获取事件*/
+.swiper .inner li {
+    width: 730px;
+    height: 374px;
+    display: inline-block;
+
+}
+
+.swiper .inner li a {
+    height: 100%;
+}
+
+.swiper .inner li img {
+    float: left;
+    height: 100%;
+}
+
+.swiper .arrow {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 233;
+    opacity: 0;
+}
+
+.swiper .arrowRight,
+.swiper .arrowLeft {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 68px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 65px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.swiper .arrowLeft {
+    padding-right: 4px;
+
+}
+
+.swiper .arrowRight {
+    padding-left: 4px;
+    right: 0;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.swiper .indecator {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translate(-50%);
+}
+
+.swiper .indecator li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    background: #fff;
+    border-radius: 50% 50%;
+}
+
+/* -----------------------------------------轮播图圆点高亮显示------------------------ */
+.current {
+    background: #FFC36E !important;
+}
+
+/* 右侧导航 */
+.special {
+    width: 516px;
+    height: 374px;
+    float: right;
+}
+
+.special .fall,
+.special .beauty,
+.special .outdoor,
+.special .furniture {
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 240px;
+    height: 90px;
+    box-shadow: 0 0 10px 0 rgba(255, 228, 190, 0.50);
+}
+
+.special div p {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 14px;
+    color: #D77E00;
+}
+
+.special .beauty,
+.special .furniture {
+    margin-left: 21px;
+}

@@ -76,6 +76,8 @@ pre {
 a {
   background-color: transparent;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 
 /**
@@ -153,6 +155,7 @@ sup {
 
 img {
   border-style: none;
+  width: 100%;
 }
 
 /* Forms
