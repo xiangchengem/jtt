@@ -269,6 +269,7 @@ aside .asideNavBar a img {
 .special {
     width: 516px;
     height: 374px;
+    padding-top: 2px;
     float: right;
 }
 
@@ -276,18 +277,15 @@ aside .asideNavBar a img {
 .special .beauty,
 .special .outdoor,
 .special .furniture {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     box-sizing: border-box;
     display: inline-block;
-    position: relative;
     width: 240px;
-    height: 90px;
-    box-shadow: 0 0 10px 0 rgba(255, 228, 190, 0.50);
 }
 
 .special div p {
     position: absolute;
-    bottom: -30px;
+    bottom: -28px;
     left: 50%;
     transform: translate(-50%);
     font-size: 14px;
@@ -296,5 +294,418 @@ aside .asideNavBar a img {
 
 .special .beauty,
 .special .furniture {
-    margin-left: 21px;
+    margin-left: 28px;
+}
+
+.special .dis {
+    width: 512px;
+}
+
+.special .fall,
+.special .beauty,
+.special .outdoor,
+.special .furniture,
+.special .dis {
+    box-shadow: 0 0 10px 0 rgba(255, 228, 190, 0.50);
+    position: relative;
+    height: 90px;
+}
+
+/* ---------- ------------------------------------------------*/
+.goodsList .hot {
+    position: relative;
+    font-size: 30px;
+    color: #333333;
+    margin: 20px 0;
+}
+
+.goodsList .hot .kill {
+    border-left: #FFC36E solid 5px;
+    padding-left: 5px;
+}
+
+.goodsList .hot .more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 20px;
+}
+
+.goodsList .hot .more a {
+    color: #FFC36E;
+}
+
+/* ------------------ ----------------------------------------*/
+.goodsList .productList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goodsList .productList li {
+    height: 468px;
+    width: 290px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 #FFE4BE;
+    border-radius: 10px;
+}
+
+.goodsList .productList a {
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+    padding: 0 20px;
+}
+
+.goodsList .productList .photoShow {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: aquamarine;
+    margin: 25px 0 16px 0;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.50);
+}
+
+.goodsList .photoShow .jdicon {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    background: #ED2A2A;
+    height: 24px;
+    width: 36px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.productList h4 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #EB726A;
+    position: relative;
+}
+
+.productList del {
+    margin-left: 3px;
+    opacity: 0.3;
+    font-size: 15px;
+    color: #000000;
+}
+
+.productList p {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    color: #333333;
+}
+
+.productList p span {
+    color: #EB726A;
+}
+
+.productList h5 {
+    font-size: 14px;
+    color: #333333;
+    margin: 12px 0 7px 0;
+}
+
+.productList span {
+    opacity: 0.6;
+    font-size: 12px;
+    color: #000000;
+}
+
+.productList .coupons {
+    height: 36px;
+    background-image: linear-gradient(-45deg, #FF9500 0%, #FFD67D 100%);
+    border-radius: 18px;
+    margin: 21px 0;
+    text-align: center;
+    line-height: 36px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/* ------------------------------------精选好货----------------------- */
+.goodsList .goodStuff li {
+    position: relative;
+    width: 755px;
+    height: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 0 #FFE4BE;
+    border-radius: 10px;
+}
+
+.goodsList .goodStuff {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+/* .goodStuff  */
+.goodStuff .photoShow {
+    display: inline-block;
+    background-color: skyblue;
+    margin: 25px 20px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.50);
+}
+
+.goodStuff .describe {
+    position: absolute;
+    display: inline-block;
+    margin: 25px 29px 25px 0;
+    height: 250px;
+}
+
+.goodStuff .describe h2 {
+    font-size: 18px;
+    color: #333333;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.goodStuff .describe span {
+    font-size: 16px;
+    color: #666666;
+    line-height: 22px;
+}
+
+.goodStuff .describe h4 {
+    margin: 26px 0 26px 0;
+    font-size: 22px;
+    color: #EB726A;
+    position: relative;
+    font-weight: 400;
+}
+
+.goodStuff .describe img {
+    vertical-align: bottom;
+    width: 42px;
+    height: 24px;
+}
+
+.goodStuff .describe del {
+    opacity: 0.3;
+    font-size: 15px;
+    color: #000000;
+}
+
+.goodStuff .describe p {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    font-size: 12px;
+    color: #333333;
+}
+
+.goodStuff .describe h4 span {
+    color: #EB726A;
+    font-size: 12px;
+}
+
+.goodStuff .describe div {
+    box-shadow: 0 0 10px rgba(187, 185, 181, 0.5);
+    position: relative;
+    height: 96px;
+    background: url('../public/images/grouping2.png') no-repeat center center
+}
+
+.goodStuff .describe .price,
+.goodStuff .describe .buy,
+.goodStuff .describe .timer {
+    position: absolute;
+}
+
+.goodStuff .describe .price {
+    top: 20px;
+    left: 99px;
+    font-size: 36px;
+    color: #EB726A;
+}
+
+.goodStuff .price span {
+    font-size: 24px;
+    color: #EB726A;
+}
+
+.goodStuff .describe .buy {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 36px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.goodStuff .describe .timer {
+    bottom: 16px;
+    left: 70px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.goodsList .timeLimit {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.goodsList .timeLimit li {
+    width: 290px;
+    height: 456px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 0 #FFE4BE;
+    border-radius: 10px;
+}
+
+.goodsList .timeLimit a {
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+    padding: 0 20px;
+}
+
+.goodsList .timeLimit .photoShow {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: aquamarine;
+    margin: 25px 0 16px 0;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.50);
+}
+
+.timeLimit h4 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #EB726A;
+    position: relative;
+}
+
+.timeLimit del {
+    margin-left: 3px;
+    opacity: 0.3;
+    font-size: 15px;
+    color: #000000;
+}
+
+.timeLimit p span {
+    color: #EB726A;
+}
+
+.timeLimit p {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    color: #333333;
+}
+
+.timeLimit h5 {
+    position: relative;
+    font-size: 14px;
+    color: #333333;
+    margin: 14px 0 7px 0;
+}
+
+.timeLimit h5 img {
+    position: absolute;
+    width: 42px;
+    height: 24px;
+    right: 0;
+    bottom: -6px;
+    vertical-align: middle;
+}
+
+.timeLimit .commit {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-top: 22px;
+    box-shadow: 0 0 10px rgba(187, 185, 181, 0.5);
+    border-radius: 4px;
+
+}
+
+.timeLimit .commit .eighty {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 158px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 32px;
+    color: #EB726A;
+}
+
+.timeLimit .commit span {
+    font-size: 24px;
+}
+
+.timeLimit .commit .nowStamp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-image: linear-gradient(-225deg, #ff9600 0%, #FF7D00 100%);
+    border-radius: 0px 4px 4px 0px;
+}
+
+.timeLimit .commit .nowStamp::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 42%;
+    width: 5px;
+    height: 10px;
+    background: #f4f4f3;
+    border-radius: 5px 0 0 5px;
+}
+
+.timeLimit .photoShow .jdicon {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: #ED2A2A;
+    height: 24px;
+    width: 36px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.goodsList .articleLive a {
+    display: block;
+    width: 660px;
+    height: 60px;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 60px;
+    margin: 50px auto;
+    background-image: linear-gradient(-180deg, #FFD67D 2%, #FF9500 100%);
+    border-radius: 27.69px;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 22px;
+    color: #B3B3B3;
+    background: #EEEEEE;
 }
