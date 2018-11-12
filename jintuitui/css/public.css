@@ -1,3 +1,259 @@
-div{
-    font-size: 40px;
+header {
+    width: 100%;
+    margin: 45px 0;
+    /* display: inline-block; */
+}
+
+header .leftLogo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 55px;
+    width: 158px;
+    margin: 0 136px 0 70px;
+}
+
+header .leftLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+header .search {
+    position: relative;
+    width: 880px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+header .search input {
+    width: 740px;
+    height: 44px;
+    padding-left: 10px;
+    border: 2px solid #FFC36E;
+    border-top-left-radius: 23.5px;
+    border-bottom-left-radius: 23.5px;
+    outline: medium;
+    /* border-bottom-right-radius: 23.5px; */
+
+}
+
+header .search .searchBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 130px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    background-color: #FFC36E;
+    vertical-align: bottom;
+    border-top-right-radius: 23.5px;
+    border-bottom-right-radius: 23.5px;
+}
+
+header .search .searchBtn img {
+    width: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+header .search .searchBtn span {
+    vertical-align: middle;
+}
+
+.navigationBar ul {
+    box-sizing: border-box;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.navigationBar ul li {
+    display: inline-block;
+    width: 24.6%;
+    text-align: center;
+    line-height: 48px;
+}
+
+.navigationBar ul li a {
+    width: 100%;
+    display: inline-block;
+    opacity: 0.3;
+    font-family: PingFang-SC-Bold;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* ---------------------------------------------头部导航动态添加class-------------- */
+.navigationBar-active {
+    border-bottom: 4px solid #FFC36E
+}
+
+.goodsList .timeLimit {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.goodsList .timeLimit li {
+    width: 290px;
+    height: 456px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 0 #FFE4BE;
+    border-radius: 10px;
+}
+
+.goodsList .timeLimit a {
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+    padding: 0 20px;
+}
+
+.goodsList .timeLimit .photoShow {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: aquamarine;
+    margin: 25px 0 16px 0;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.50);
+}
+
+.timeLimit h4 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #EB726A;
+    position: relative;
+}
+
+.timeLimit del {
+    margin-left: 3px;
+    opacity: 0.3;
+    font-size: 15px;
+    color: #000000;
+}
+
+.timeLimit p span {
+    color: #EB726A;
+}
+
+.timeLimit p {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    color: #333333;
+}
+
+.timeLimit h5 {
+    position: relative;
+    font-size: 14px;
+    color: #333333;
+    margin: 14px 0 7px 0;
+}
+
+.timeLimit h5 img {
+    position: absolute;
+    width: 42px;
+    height: 24px;
+    right: 0;
+    bottom: -6px;
+    vertical-align: middle;
+}
+
+.timeLimit .commit {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-top: 22px;
+    box-shadow: 0 0 10px rgba(187, 185, 181, 0.5);
+    border-radius: 4px;
+
+}
+
+.timeLimit .commit .eighty {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 158px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 32px;
+    color: #EB726A;
+}
+
+.timeLimit .commit span {
+    font-size: 24px;
+}
+
+.timeLimit .commit .nowStamp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-image: linear-gradient(-225deg, #ff9600 0%, #FF7D00 100%);
+    border-radius: 0px 4px 4px 0px;
+}
+
+.timeLimit .commit .nowStamp::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 42%;
+    width: 5px;
+    height: 10px;
+    background: #f4f4f3;
+    border-radius: 5px 0 0 5px;
+}
+
+/* .timeLimit .photoShow .jdicon,
+.goodsList .photoShow .jdicon {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    background: #ED2A2A;
+    height: 24px;
+    width: 36px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    border-radius: 3px;
+} */
+
+.timeLimit .photoShow .jdicon {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: #ED2A2A;
+    height: 24px;
+    width: 36px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+footer {
+    /* position: fixed; */
+    /* bottom: 0; */
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 22px;
+    color: #B3B3B3;
+    background: #EEEEEE;
+}
+.pagination{
+
 }

@@ -27,107 +27,14 @@ a {
     text-align: right;
     flex: 1;
 }
-
+/* 
 .headerTag .navlink a {
     display: inline-block;
-}
+} */
 
 .headerTag .navlink a:last-child {
     margin-left: 20px;
 }
-
-header {
-    width: 100%;
-    margin: 45px 0;
-    /* display: inline-block; */
-}
-
-header .leftLogo {
-    display: inline-block;
-    vertical-align: middle;
-    height: 55px;
-    width: 158px;
-    margin: 0 136px 0 70px;
-}
-
-header .leftLogo img {
-    width: 100%;
-    height: 100%;
-}
-
-header .search {
-    position: relative;
-    width: 880px;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-header .search input {
-    width: 740px;
-    height: 44px;
-    padding-left: 10px;
-    border: 2px solid #FFC36E;
-    border-top-left-radius: 23.5px;
-    border-bottom-left-radius: 23.5px;
-    outline: medium;
-    /* border-bottom-right-radius: 23.5px; */
-
-}
-
-header .search .searchBtn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 130px;
-    height: 48px;
-    text-align: center;
-    line-height: 48px;
-    color: #fff;
-    background-color: #FFC36E;
-    vertical-align: bottom;
-    border-top-right-radius: 23.5px;
-    border-bottom-right-radius: 23.5px;
-}
-
-header .search .searchBtn img {
-    width: 16px;
-    margin-right: 5px;
-    vertical-align: middle;
-}
-
-header .search .searchBtn span {
-    vertical-align: middle;
-}
-
-.navigationBar ul {
-    box-sizing: border-box;
-    height: 48px;
-    width: 100%;
-    margin-bottom: 22px;
-}
-
-.navigationBar ul li {
-    display: inline-block;
-    width: 24.6%;
-    text-align: center;
-    line-height: 48px;
-}
-
-.navigationBar ul li a {
-    width: 100%;
-    display: inline-block;
-    opacity: 0.3;
-    font-family: PingFang-SC-Bold;
-    font-size: 18px;
-    font-weight: 600;
-    color: #000000;
-}
-
-/* ---------------------------------------------头部导航动态添加class-------------- */
-.navigationBar-active {
-    border-bottom: 4px solid #FFC36E
-}
-
 .container {
     width: 100%;
     overflow: hidden;
@@ -327,14 +234,17 @@ aside .asideNavBar a img {
 .goodsList .hot .more {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 26px;
     font-size: 20px;
 }
 
 .goodsList .hot .more a {
     color: #FFC36E;
 }
-
+.goodsList .hot .more i{
+    letter-spacing: -6px;
+    font-style:normal;
+}
 /* ------------------ ----------------------------------------*/
 .goodsList .productList {
     display: flex;
@@ -355,7 +265,7 @@ aside .asideNavBar a img {
     display: block;
     padding: 0 20px;
 }
-
+.goodsList .timeLimit .photoShow,
 .goodsList .productList .photoShow {
     position: relative;
     width: 250px;
@@ -364,7 +274,7 @@ aside .asideNavBar a img {
     margin: 25px 0 16px 0;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.50);
 }
-
+.timeLimit .photoShow .jdicon,
 .goodsList .photoShow .jdicon {
     position: absolute;
     top: 45px;
@@ -379,20 +289,21 @@ aside .asideNavBar a img {
     border-radius: 3px;
 }
 
+.timeLimit h4,
 .productList h4 {
     font-weight: 400;
     font-size: 24px;
     color: #EB726A;
     position: relative;
 }
-
+.timeLimit del,
 .productList del {
     margin-left: 3px;
     opacity: 0.3;
     font-size: 15px;
     color: #000000;
 }
-
+.timeLimit p,
 .productList p {
     display: inline-block;
     position: absolute;
@@ -401,7 +312,7 @@ aside .asideNavBar a img {
     font-size: 12px;
     color: #333333;
 }
-
+.timeLimit p span,
 .productList p span {
     color: #EB726A;
 }
@@ -570,16 +481,16 @@ aside .asideNavBar a img {
     padding: 0 20px;
 }
 
-.goodsList .timeLimit .photoShow {
+/* .goodsList .timeLimit .photoShow {
     position: relative;
     width: 250px;
     height: 250px;
     background: aquamarine;
     margin: 25px 0 16px 0;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.50);
-}
+} */
 
-.timeLimit h4 {
+/* .timeLimit h4 {
     font-weight: 400;
     font-size: 24px;
     color: #EB726A;
@@ -604,7 +515,7 @@ aside .asideNavBar a img {
     right: 0;
     font-size: 12px;
     color: #333333;
-}
+} */
 
 .timeLimit h5 {
     position: relative;
@@ -674,17 +585,8 @@ aside .asideNavBar a img {
 }
 
 .timeLimit .photoShow .jdicon {
-    position: absolute;
     top: 20px;
     left: 0;
-    background: #ED2A2A;
-    height: 24px;
-    width: 36px;
-    line-height: 24px;
-    text-align: center;
-    font-size: 12px;
-    color: #FFFFFF;
-    border-radius: 3px;
 }
 
 .goodsList .articleLive a {
@@ -698,14 +600,4 @@ aside .asideNavBar a img {
     margin: 50px auto;
     background-image: linear-gradient(-180deg, #FFD67D 2%, #FF9500 100%);
     border-radius: 27.69px;
-}
-
-footer {
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    line-height: 300px;
-    font-size: 22px;
-    color: #B3B3B3;
-    background: #EEEEEE;
 }
