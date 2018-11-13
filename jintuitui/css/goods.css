@@ -1,6 +1,6 @@
 /* 
 @param 商品详情加精选好货页面的样式现在一起。
-@prama 关于分页的样式和一些逻辑也可以作为一个公共文件
+@param 关于分页的样式和一些逻辑也可以作为一个公共文件
 */
 
 
@@ -21,7 +21,7 @@
 
 .crumbs a {
     display: block;
-    color: #B3B3B3;
+    color: #888;
 }
 
 /* -----------------面包屑active-------------- */
@@ -52,9 +52,9 @@
 
 /* -----------------sort-active-------------- */
 
-/* .sort-active {
+.sort-active {
     color: #FFC36E !important;
-} */
+}
 
 .sort-icon .rsaquo {
     vertical-align: sub;
@@ -115,14 +115,8 @@
     border-radius: 10px;
 }
 
-.goods-info .goods-sift li {
-    width: 290px;
-    height: 456px;
-    box-shadow: 0 0 10px 0 #FFE4BE;
-    border-radius: 10px;
-}
 
-/* 商品详情图 */
+/* 商品详情 页面图 */
 
 
 
@@ -130,7 +124,9 @@
     /* display: inline-block; */
     position: relative;
     box-sizing: border-box;
-    margin: 35px 40px;
+    margin: 35px 40px 0 40px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #FFC36E;
     /* font-size: 0; */
 
     /* width: 100%; */
@@ -178,10 +174,11 @@
     font-size: 18px;
     color: #666666;
     font-weight: 400;
+    line-height: 25px;
 }
 
 .goods-details .describe h4 {
-    margin: 55px 0 160px 0;
+    margin: 60px 0 165px 0;
     font-size: 42px;
     color: #EB726A;
     position: relative;
@@ -209,6 +206,7 @@
     font-size: 20px;
     color: #000000;
 }
+
 .goods-details .describe h4 span {
     color: #EB726A;
 }
@@ -216,24 +214,27 @@
 .goods-details .describe div {
     width: 572px;
     height: 130px;
-    box-shadow: 0 0 10px rgba(187, 185, 181, 0.5);
+    line-height: 130px;
     position: relative;
-    height: 96px;
-    background: url('../public/images/grouping2.png') no-repeat center center;
-    background-size: 572px 130px;
-
+    background: url('../public/images/grouping3.png') no-repeat center center;
+    background-size: 100% 100%;
 }
+.goods-details .describe div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .goods-details .describe .price,
-.goods-details .describe .buy,
-.goods-details .describe .timer {
+.goods-details .describe .buy {
     position: absolute;
 }
 
 .goods-details .describe .price {
-    top: 20px;
-    left: 99px;
-    font-size: 36px;
-    color: #EB726A;
+    top: 0;
+    left: 125px;
+    font-size: 56px;
+    color: #FE5D5B;
 }
 
 .goods-details .price span {
@@ -244,110 +245,366 @@
 .goods-details .describe .buy {
     top: 50%;
     transform: translateY(-50%);
-    right: 36px;
-    font-size: 16px;
+    right: 72px;
+    font-size: 18px;
     color: #FFFFFF;
 }
 
-.goods-details .describe .timer {
-    bottom: 16px;
-    left: 70px;
-    font-size: 12px;
-    color: #999999;
+.goods-details .goods-img {
+    margin: 30px 40px;
+    background: aquamarine;
+    height: 500px;
 }
-/* 
 
+.goods-info .goods-sift li {
+    margin-bottom: 20px;
+    width: 290px;
+    height: 456px;
+    box-shadow: 0 0 10px 0 #FFE4BE;
+    border-radius: 10px;
+}
 
-.goods-details .describe {
-    position: absolute;
-    display: inline-block;
-    margin: 25px 29px 25px 0;
+/* 样式
+ */
+.timeLimit a {
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+    padding: 0 20px;
+}
+
+.timeLimit .photoShow {
+    position: relative;
+    width: 250px;
     height: 250px;
+    background: aquamarine;
+    margin: 25px 0 16px 0;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.50);
 }
 
-.goods-details .describe h2 {
-    font-size: 18px;
-    color: #333333;
-    line-height: 25px;
-    margin-bottom: 10px;
-}
-
-.goods-details .describe span {
-    font-size: 16px;
-    color: #666666;
-    line-height: 22px;
-}
-
-.goods-details .describe h4 {
-    margin: 26px 0 26px 0;
-    font-size: 22px;
+.timeLimit h4 {
+    font-weight: 400;
+    font-size: 24px;
     color: #EB726A;
     position: relative;
-    font-weight: 400;
 }
 
-.goods-details .describe img {
-    vertical-align: bottom;
-    width: 42px;
-    height: 24px;
-}
-
-.goods-details .describe del {
+.timeLimit del {
+    margin-left: 3px;
     opacity: 0.3;
     font-size: 15px;
     color: #000000;
 }
 
-.goods-details .describe p {
+.timeLimit p span {
+    color: #EB726A;
+}
+
+.timeLimit p {
     display: inline-block;
     position: absolute;
+    bottom: 0;
     right: 0;
-    bottom: 2px;
     font-size: 12px;
     color: #333333;
 }
 
-.goods-details .describe h4 span {
-    color: #EB726A;
-    font-size: 12px;
-}
-
-.goods-details .describe div {
-    box-shadow: 0 0 10px rgba(187, 185, 181, 0.5);
+.timeLimit h5 {
     position: relative;
-    height: 96px;
-    background: url('../public/images/grouping2.png') no-repeat center center
+    font-size: 14px;
+    color: #333333;
+    margin: 14px 0 7px 0;
 }
 
-.goods-details .describe .price,
-.goods-details .describe .buy,
-.goods-details .describe .timer {
+.timeLimit h5 img {
     position: absolute;
+    width: 42px;
+    height: 24px;
+    right: 30px;
+    bottom: -6px;
+    vertical-align: middle;
 }
 
-.goods-details .describe .price {
-    top: 20px;
-    left: 99px;
-    font-size: 36px;
+.timeLimit .commit {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-top: 22px;
+    box-shadow: 0 0 10px rgba(187, 185, 181, 0.5);
+    border-radius: 4px;
+
+}
+
+.timeLimit h5 .risk {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    background: #FFD100;
+    border-radius: 3px;
+}
+
+.timeLimit .commit .eighty {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 158px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 32px;
     color: #EB726A;
 }
 
-.goods-details .price span {
+.timeLimit .commit span {
+    font-size: 24px;
+}
+
+.timeLimit .commit .nowStamp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 102px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-image: linear-gradient(-225deg, #ff9600 0%, #FF7D00 100%);
+    border-radius: 0px 4px 4px 0px;
+}
+
+.timeLimit .commit .nowStamp::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 42%;
+    width: 5px;
+    height: 10px;
+    background: #f4f4f3;
+    border-radius: 5px 0 0 5px;
+}
+
+.productList .photoShow p,
+.timeLimit .photoShow .jdicon {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: #ED2A2A;
+    height: 24px;
+    width: 36px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.see-more {
+    text-align: right;
+    font-size: 20px;
+
+}
+
+.hot {
+    position: relative;
+    font-size: 30px;
+    color: #333333;
+    margin: 20px 0;
+}
+
+.hot .kill {
+    border-left: #FFC36E solid 5px;
+    padding-left: 5px;
+}
+
+.hot .more {
+    position: absolute;
+    bottom: 0;
+    right: 26px;
+    font-size: 20px;
+}
+
+.see-more,
+.hot .more a {
+    color: #FFC36E;
+}
+
+.see-more i,
+.hot .more i {
+    letter-spacing: -6px;
+    font-style: normal;
+}
+
+.see-more i {
+    padding-right: 6px;
+}
+
+
+
+
+.productList {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-bottom: 35px;
+}
+
+.productList .photoShow {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: aquamarine;
+    margin: 25px 0 16px 0;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.50);
+}
+
+.productList li {
+    height: 468px;
+    width: 290px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 #FFE4BE;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.productList a {
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+    padding: 0 20px;
+}
+
+.photoShow .jdicon {
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    background: #ED2A2A;
+    height: 24px;
+    width: 36px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+
+.productList h4 {
+    font-weight: 400;
     font-size: 24px;
     color: #EB726A;
+    position: relative;
 }
 
-.goods-details .describe .buy {
-    top: 50%;
-    transform: translateY(-50%);
-    right: 36px;
-    font-size: 16px;
+.productList del {
+    margin-left: 3px;
+    opacity: 0.3;
+    font-size: 15px;
+    color: #000000;
+}
+
+.productList p {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    color: #333333;
+}
+
+.productList p span {
+    color: #EB726A;
+}
+
+.productList h5 {
+    font-size: 14px;
+    color: #333333;
+    margin: 12px 0 7px 0;
+}
+
+.productList span {
+    opacity: 0.6;
+    font-size: 12px;
+    color: #000000;
+}
+
+.productList .coupons {
+    height: 36px;
+    background-image: linear-gradient(-45deg, #FF9500 0%, #FFD67D 100%);
+    border-radius: 18px;
+    margin: 21px 0;
+    text-align: center;
+    line-height: 36px;
+    font-size: 18px;
     color: #FFFFFF;
 }
 
-.goods-details .describe .timer {
-    bottom: 16px;
-    left: 70px;
-    font-size: 12px;
-    color: #999999;
-} */
+/* 分页 */
+
+#page {
+    /* height: 60px; */
+    margin: 30px auto 50px;
+}
+
+#page .pagination {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.pagination li a {
+    display: block;
+    width: 37px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 38px;
+    color: #FFC36E;
+}
+
+#paging {
+    width: 72px;
+    border: 1px solid #FFC36E;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+
+.pagination-active {
+    background: #FFC36E;
+    color: #FFFFFF !important;
+    border-radius: 4px;
+}
+
+.jump-page {
+    margin-left: 10px;
+    color: #FFC36E;
+    line-height: 38px;
+    font-size: 14px;
+}
+
+.jump-page input {
+    width: 37px;
+    height: 23px;
+    margin: 0 5px;
+    border: 1px solid #FFC36E;
+    border-radius: 4px;
+    outline: none;
+    text-align: center;
+}
+
+.jump-page button {
+    width: 46px;
+    height: 23px;
+    margin-left: 5px;
+    color: #FFC36E;
+    border: 1px solid #FFC36E;
+    border-radius: 11.5px;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+}
